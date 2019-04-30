@@ -1,0 +1,24 @@
+[package]
+name = "bme680-webthing"
+version = "0.1.0"
+authors = ["tyler"]
+edition = "2018"
+
+[dependencies]
+bme680 = "0.4.3"
+embedded-hal = "0.2"
+linux-embedded-hal = "0.2.2"
+webthing = "0.11.0"
+actix = "0.7"
+actix-net = "0.2"
+actix-web = { version = "0.7", default-features = false, features = ["brotli", "flate2-c", "cell"] }
+chrono = "0.4"
+get_if_addrs = "0.5"
+hostname = "0.1"
+libmdns = "0.2"
+openssl = { version = "0.10", optional = true }
+serde_json = "1.0"
+valico = "3.0"
+env_logger = "0.6"
+log = "*"
+rand = "0.6"
